@@ -14,7 +14,7 @@
   /* Border & Rim Accents */
   --border-subtle: rgba(255, 255, 255, 0.08);
   --border-highlight: rgba(255, 255, 255, 0.16);
-  --border-neon-cyan: rgba(0, 242, 254, 0.4);
+  --border-neon-cyan: rgba(0, 242, 254, 0.4); 
   --border-neon-purple: rgba(168, 85, 247, 0.4);
 
   /* Brand Accents */

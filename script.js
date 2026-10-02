@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { name: 'Firebase & Firestore', category: 'database', level: 'Expert', percent: 94, icon: 'fa-solid fa-fire', desc: 'NoSQL Cloud Firestore, Firebase Authentication, real-time sync listeners, Cloud Storage' },
     { name: 'Laravel & PHP', category: 'backend', level: 'Expert', percent: 92, icon: 'fa-brands fa-laravel', desc: 'MVC web architecture, Eloquent ORM, secure authentication, Blade templates, RESTful API controllers' },
     { name: 'MySQL Database', category: 'database', level: 'Expert', percent: 96, icon: 'fa-solid fa-database', desc: 'Relational database schema modeling, indexing, foreign keys, normalization, query optimization' },
-    
+     
     // Web & Frontend
     { name: 'HTML5, CSS3, JavaScript', category: 'backend', level: 'Expert', percent: 92, icon: 'fa-brands fa-js', desc: 'Responsive web layouts, modern ES6+ JavaScript, DOM manipulation, asynchronous fetch APIs' },
     { name: 'Tailwind CSS', category: 'backend', level: 'Expert', percent: 90, icon: 'fa-brands fa-css3-alt', desc: 'Modern utility-first responsive styling, UI components, dashboard interfaces' },
