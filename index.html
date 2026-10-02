@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zanyar Z Ahmed | Database Technology & Software Developer</title>
+  <meta name="description" content="Portfolio of Zanyar Z Ahmed — Database Technology & Software Developer specializing in Flutter, Firebase, Laravel, MySQL, and modern Web & Mobile solutions.">
+  <meta name="keywords" content="Zanyar Z Ahmed, Software Developer, Database Technology, Flutter, Laravel, MySQL, Firebase, Sulaimani, Kurdistan, Portfolio">
+  <meta name="author" content="Zanyar Z Ahmed">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome 6 Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+  <!-- Glowing ambient background spheres -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Custom Cursor Glow Follower -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-wrapper">
+    <nav class="navbar glass-panel" id="navbar">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-bracket">&lt;</span>
+        <span class="brand-name">ZANYAR</span>
+        <span class="brand-cursor">/</span>
+        <span class="brand-bracket">&gt;</span>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#hero" class="nav-link active"><i class="fa-solid fa-house"></i> <span>Home</span></a>
+        <a href="#skills" class="nav-link"><i class="fa-solid fa-microchip"></i> <span>Skills & Stack</span></a>
+        <a href="#projects" class="nav-link"><i class="fa-solid fa-diagram-project"></i> <span>Projects</span></a>
+        <a href="#education" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> <span>Education</span></a>
+        <a href="#terminal-section" class="nav-link"><i class="fa-solid fa-terminal"></i> <span>Console</span></a>
+        <a href="#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> <span>Contact</span></a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="assets/Zanyar_Z_Ahmed_CV.pdf" download="Zanyar_Z_Ahmed_CV.pdf" class="btn btn-sm btn-secondary cv-download-nav" title="Download Official CV PDF">
+          <i class="fa-solid fa-file-arrow-down"></i>
+          <span>CV PDF</span>
+        </a>
+        <button class="btn btn-sm btn-primary" id="openContactModalBtn">
+          <span>Let's Talk</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-container">
+        
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="status-indicator"></span>
+            <span>Database Technology & Software Developer</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Zanyar Z Ahmed</span>. Building robust mobile, web & database solutions.
+          </h1>
+
+          <p class="hero-bio">
+            Motivated and detail-oriented software developer with hands-on expertise across <strong class="text-white">Flutter, Firebase, Laravel, and MySQL</strong>. Passionate about solving real-world challenges with clean architecture, intuitive UI/UX design, and high-performance databases.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="assets/Zanyar_Z_Ahmed_CV.pdf" target="_blank" download="Zanyar_Z_Ahmed_CV.pdf" class="btn btn-primary btn-lg">
+              <i class="fa-solid fa-file-arrow-down"></i>
+              <span>Download Official CV</span>
+            </a>
+            <a href="#projects" class="btn btn-secondary btn-lg">
+              <i class="fa-solid fa-laptop-code"></i>
+              <span>View Projects</span>
+            </a>
+            <button class="btn btn-glass btn-lg" id="copyEmailQuickBtn" data-email="zanyarzorab9@gmail.com">
+              <i class="fa-regular fa-copy"></i>
+              <span>Copy Email</span>
+            </button>
+          </div>
+
+          <!-- Quick Highlights Strip -->
+          <div class="hero-stats-grid glass-panel">
+            <div class="stat-item">
+              <div class="stat-number">Flutter & Dart</div>
+              <div class="stat-label">Mobile App Development</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <div class="stat-number">Laravel & PHP</div>
+              <div class="stat-label">Robust Web Backends</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <div class="stat-number">MySQL & Firebase</div>
+              <div class="stat-label">Relational & NoSQL Data</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <div class="stat-number">SPU Graduate</div>
+              <div class="stat-label">B.Sc. Computer Science</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Profile Card with 3D Tilt -->
+        <div class="hero-card-wrapper">
+          <div class="profile-card glass-panel" id="tiltProfileCard">
+            <div class="card-glow-overlay"></div>
+            
+            <div class="profile-image-container">
+              <img src="assets/images/zanyar.jpg" alt="Zanyar Z Ahmed - Software Developer Portrait" class="profile-image">
+              <div class="profile-overlay-badge">
+                <i class="fa-solid fa-circle-check"></i> Available for Opportunities
+              </div>
+            </div>
+
+            <div class="profile-info">
+              <div class="profile-header-row">
+                <div>
+                  <h2 class="profile-name">Zanyar Z Ahmed</h2>
+                  <p class="profile-handle">@zanaway · Developer</p>
+                </div>
+                <div class="location-badge">
+                  <i class="fa-solid fa-location-dot"></i> Sulaimani, Iraq
+                </div>
+              </div>
+
+              <!-- Real-time code activity card -->
+              <div class="live-activity-box">
+                <div class="activity-header">
+                  <div class="activity-dots">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                  </div>
+                  <span class="activity-title">developer_profile.json</span>
+                </div>
+                <pre class="activity-code"><code>{
+  <span class="keyword">"developer"</span>: <span class="string">"Zanyar Z Ahmed"</span>,
+  <span class="keyword">"focus"</span>: [<span class="string">"Flutter"</span>, <span class="string">"Firebase"</span>, <span class="string">"Laravel"</span>, <span class="string">"MySQL"</span>],
+  <span class="keyword">"languages"</span>: [<span class="string">"Kurdish (Native)"</span>, <span class="string">"English (Good)"</span>],
+  <span class="keyword">"status"</span>: <span class="string">"Ready to build high-impact apps"</span>
+}</code></pre>
+              </div>
+
+              <div class="profile-social-strip">
+
+                <a href="https://t.me/zanaway1" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="Telegram (@zanaway1)">
+                  <i class="fa-brands fa-telegram"></i>
+                </a>
+                <a href="mailto:zanyarzorab9@gmail.com" class="social-icon-btn" title="Email Zanyar">
+                  <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="tel:+9647517988985" class="social-icon-btn" title="Direct Phone Call">
+                  <i class="fa-solid fa-phone"></i>
+                </a>
+                <a href="assets/Zanyar_Z_Ahmed_CV.pdf" download="Zanyar_Z_Ahmed_CV.pdf" class="social-icon-btn" title="Download CV">
+                  <i class="fa-solid fa-file-pdf"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SKILLS & TECH STACK SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-subtitle"><i class="fa-solid fa-bolt-lightning"></i> Core Competencies</span>
+          <h2 class="section-title">Technical Skills & Technology Matrix</h2>
+          <p class="section-desc">
+            Practical knowledge across mobile app engineering, database architecture, backend systems, and modern UI/UX design.
+          </p>
+        </div>
+
+        <!-- Controls: Search & Category Filter Pills -->
+        <div class="skills-control-bar glass-panel">
+          <div class="skills-search-wrapper">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" id="skillSearchInput" placeholder="Filter skills (e.g. Flutter, Firebase, Laravel, MySQL, Git, UI/UX)..." autocomplete="off">
+            <button class="clear-search-btn" id="clearSkillSearch" title="Clear filter">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+
+          <div class="skills-category-tabs" id="skillCategoryTabs">
+            <button class="cat-pill active" data-filter="all">All Skills (16)</button>
+            <button class="cat-pill" data-filter="mobile">Mobile (Flutter & Dart)</button>
+            <button class="cat-pill" data-filter="database">Databases & Cloud</button>
+            <button class="cat-pill" data-filter="backend">Backend & Web</button>
+            <button class="cat-pill" data-filter="tools">Tools & Engineering</button>
+          </div>
+        </div>
+
+        <!-- Skills Grid with Category Badges & Proficiency Meters -->
+        <div class="skills-grid" id="skillsGrid">
+          <!-- Skill items rendered dynamically -->
+        </div>
+
+        <!-- Engineering Foundations Ribbon -->
+        <div class="architecture-ribbon glass-panel">
+          <div class="ribbon-title"><i class="fa-solid fa-cubes-stacked"></i> Engineering Fundamentals & Soft Skills</div>
+          <div class="ribbon-tags">
+            <span class="arch-tag"><i class="fa-solid fa-circle-check"></i> Relational Database Design (MySQL)</span>
+            <span class="arch-tag"><i class="fa-solid fa-circle-check"></i> Real-time NoSQL Data Sync (Firebase)</span>
+            <span class="arch-tag"><i class="fa-solid fa-circle-check"></i> Object-Oriented Programming (OOP)</span>
+            <span class="arch-tag"><i class="fa-solid fa-circle-check"></i> Data Structures & Algorithms</span>
+            <span class="arch-tag"><i class="fa-solid fa-circle-check"></i> RESTful API Integration</span>
+            <span class="arch-tag"><i class="fa-solid fa-circle-check"></i> Multilingual Systems & i18n</span>
+            <span class="arch-tag"><i class="fa-solid fa-circle-check"></i> Role-Based Access Control (RBAC)</span>
+            <span class="arch-tag"><i class="fa-solid fa-circle-check"></i> Clean Code & Version Control (Git)</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SHOWCASE SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="header-split">
+            <div>
+              <span class="section-subtitle"><i class="fa-solid fa-flask"></i> Proven Projects</span>
+              <h2 class="section-title">Featured Production & Academic Software</h2>
+              <p class="section-desc">
+                Real-world software built with scalability, user engagement, and data integrity at the forefront.
+              </p>
+            </div>
+            
+            <div class="project-filter-pills" id="projectFilterGroup">
+              <button class="proj-pill active" data-filter="all">All Projects</button>
+              <button class="proj-pill" data-filter="mobile">Mobile Apps (Flutter)</button>
+              <button class="proj-pill" data-filter="web">Web & Systems</button>
+              <button class="proj-pill" data-filter="database">Databases & APIs</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projectsGrid">
+
+          <!-- Project 1: Iter - AI Multilingual Student Platform -->
+          <article class="project-card glass-panel" data-category="mobile">
+            <div class="project-media-wrapper">
+              <img src="assets/images/project-iter.jpg" alt="Iter AI Multilingual Student Platform" class="project-media">
+              <div class="project-badge-overlay">
+                <span class="tech-badge-primary">Flutter & Firebase</span>
+              </div>
+              <div class="project-links-overlay">
+                <button class="btn btn-sm btn-primary project-modal-trigger" data-project="iter">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i> View Deep Dive
+                </button>
+
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span class="project-role"><i class="fa-solid fa-mobile-screen"></i> Lead Mobile Developer</span>
+                <span class="project-impact"><i class="fa-solid fa-earth-americas"></i> Multilingual Real-Time</span>
+              </div>
+
+              <h3 class="project-title">Iter — AI-Powered Multilingual Student Platform</h3>
+              
+              <p class="project-summary">
+                A cross-cultural mobile platform empowering international and local students. Features secure authentication, real-time messaging, AI-driven dynamic translation, active interest communities, and academic event management.
+              </p>
+
+              <div class="project-tags">
+                <span class="tag">Flutter</span>
+                <span class="tag">Dart</span>
+                <span class="tag">Firebase Auth</span>
+                <span class="tag">Cloud Firestore</span>
+                <span class="tag">AI Translation</span>
+                <span class="tag">UI/UX</span>
+              </div>
+
+              <div class="project-footer">
+                <button class="btn-text project-modal-trigger" data-project="iter">
+                  <span>Architecture & Feature Details</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Nada App - E-Commerce & Retail Mobile Platform -->
+          <article class="project-card glass-panel" data-category="mobile">
+            <div class="project-media-wrapper">
+              <img src="assets/images/project-nada.jpg" alt="Nada App E-Commerce Mobile Platform" class="project-media">
+              <div class="project-badge-overlay">
+                <span class="tech-badge-primary">Flutter & Cloud Backend</span>
+              </div>
+              <div class="project-links-overlay">
+                <button class="btn btn-sm btn-primary project-modal-trigger" data-project="nada">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i> View Deep Dive
+                </button>
+                <a href="https://github.com/zanaway" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-glass">
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span class="project-role"><i class="fa-solid fa-cart-shopping"></i> Mobile App Developer</span>
+                <span class="project-impact"><i class="fa-solid fa-bolt"></i> Real-Time Orders</span>
+              </div>
+
+              <h3 class="project-title">Nada App — Modern E-Commerce Platform</h3>
+              
+              <p class="project-summary">
+                A modern cross-platform mobile shopping application built with Flutter. Features interactive product catalogs, real-time shopping cart and checkout flows, customer profile management, and smooth multilingual navigation.
+              </p>
+
+              <div class="project-tags">
+                <span class="tag">Flutter</span>
+                <span class="tag">Dart</span>
+                <span class="tag">Firebase</span>
+                <span class="tag">REST APIs</span>
+                <span class="tag">State Management</span>
+                <span class="tag">UI/UX</span>
+              </div>
+
+              <div class="project-footer">
+                <button class="btn-text project-modal-trigger" data-project="nada">
+                  <span>Architecture & Feature Details</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Inventory Mobile Shop System -->
+          <article class="project-card glass-panel" data-category="web database">
+            <div class="project-media-wrapper">
+              <img src="assets/images/project-inventory.jpg" alt="Inventory Mobile Shop System" class="project-media">
+              <div class="project-badge-overlay">
+                <span class="tech-badge-primary">Laravel & MySQL POS</span>
+              </div>
+              <div class="project-links-overlay">
+                <button class="btn btn-sm btn-primary project-modal-trigger" data-project="inventory">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i> View Deep Dive
+                </button>
+
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span class="project-role"><i class="fa-solid fa-boxes-stacked"></i> Full-Stack & Database</span>
+                <span class="project-impact"><i class="fa-solid fa-barcode"></i> IMEI & Stock Control</span>
+              </div>
+
+              <h3 class="project-title">Inventory Mobile Shop System (POS)</h3>
+              
+              <p class="project-summary">
+                A complete inventory control and point-of-sale system tailored for mobile device and electronics shops. Features device IMEI serial tracking, barcode scanner support, supplier invoices, low-stock warnings, and daily profit analytics.
+              </p>
+
+              <div class="project-tags">
+                <span class="tag">Laravel</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">PHP</span>
+                <span class="tag">Barcode / IMEI</span>
+                <span class="tag">Tailwind CSS</span>
+                <span class="tag">POS Billing</span>
+              </div>
+
+              <div class="project-footer">
+                <button class="btn-text project-modal-trigger" data-project="inventory">
+                  <span>Architecture & Feature Details</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Nawa Hospital Management Website -->
+          <article class="project-card glass-panel" data-category="web">
+            <div class="project-media-wrapper">
+              <img src="assets/images/project-nawa.jpg" alt="Nawa Hospital Management Platform" class="project-media">
+              <div class="project-badge-overlay">
+                <span class="tech-badge-primary">Laravel & MySQL</span>
+              </div>
+              <div class="project-links-overlay">
+                <button class="btn btn-sm btn-primary project-modal-trigger" data-project="nawa">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i> View Deep Dive
+                </button>
+
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span class="project-role"><i class="fa-solid fa-server"></i> Full-Stack Web Developer</span>
+                <span class="project-impact"><i class="fa-solid fa-shield-halved"></i> Role-Based Control</span>
+              </div>
+
+              <h3 class="project-title">Nawa Hospital Management Website</h3>
+              
+              <p class="project-summary">
+                A comprehensive medical center management web platform featuring an administrator dashboard, doctor appointment scheduling, department directory, multilingual patient support, and strict role-based access control.
+              </p>
+
+              <div class="project-tags">
+                <span class="tag">Laravel</span>
+                <span class="tag">PHP</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">Tailwind CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Admin Panel</span>
+              </div>
+
+              <div class="project-footer">
+                <button class="btn-text project-modal-trigger" data-project="nawa">
+                  <span>Architecture & Feature Details</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Cloud Database & API Architecture Suite -->
+          <article class="project-card glass-panel" data-category="database">
+            <div class="project-media-wrapper">
+              <img src="assets/images/project-cloud.jpg" alt="Database Architecture and API Infrastructure" class="project-media">
+              <div class="project-badge-overlay">
+                <span class="tech-badge-primary">Database & APIs</span>
+              </div>
+              <div class="project-links-overlay">
+                <button class="btn btn-sm btn-primary project-modal-trigger" data-project="dbarch">
+                  <i class="fa-solid fa-magnifying-glass-plus"></i> View Deep Dive
+                </button>
+
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta-row">
+                <span class="project-role"><i class="fa-solid fa-database"></i> Database Specialist</span>
+                <span class="project-impact"><i class="fa-solid fa-bolt"></i> High Query Efficiency</span>
+              </div>
+
+              <h3 class="project-title">Enterprise Database Schemas & REST APIs</h3>
+              
+              <p class="project-summary">
+                Scalable relational database designs and optimized schema structures in MySQL, paired with clean RESTful API layers, foreign key constraints, indexing strategies, and automated data validation.
+              </p>
+
+              <div class="project-tags">
+                <span class="tag">MySQL</span>
+                <span class="tag">Database Design</span>
+                <span class="tag">Indexing</span>
+                <span class="tag">REST APIs</span>
+                <span class="tag">Git & GitHub</span>
+              </div>
+
+              <div class="project-footer">
+                <button class="btn-text project-modal-trigger" data-project="dbarch">
+                  <span>Architecture & Feature Details</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & CERTIFICATIONS SECTION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-subtitle"><i class="fa-solid fa-graduation-cap"></i> Academic & Qualifications</span>
+          <h2 class="section-title">Education & Professional Certifications</h2>
+          <p class="section-desc">
+            Formal computer science foundations combined with continuous industry training and verified credentials.
+          </p>
+        </div>
+
+        <div class="education-grid">
+          
+          <!-- Degree Card -->
+          <div class="edu-degree-card glass-panel">
+            <div class="edu-top-row">
+              <div class="edu-icon"><i class="fa-solid fa-university"></i></div>
+              <div>
+                <span class="edu-period">2026 — Present</span>
+                <h3 class="edu-title">B.Sc. in Computer Science</h3>
+                <h4 class="edu-institution">Sulaimani Polytechnic University (SPU)</h4>
+                <p class="edu-location"><i class="fa-solid fa-location-dot"></i> Sulaimani, Kurdistan Region, Iraq</p>
+              </div>
+            </div>
+
+            <div class="coursework-box">
+              <span class="coursework-title"><i class="fa-solid fa-book-bookmark"></i> Key Coursework:</span>
+              <div class="coursework-tags">
+                <span>Database Technology</span>
+                <span>Data Structures & Algorithms</span>
+                <span>Software Engineering</span>
+                <span>Web Development</span>
+                <span>Operating Systems</span>
+                <span>Computer Networks</span>
+              </div>
+            </div>
+
+            <div class="languages-box">
+              <span class="languages-title"><i class="fa-solid fa-language"></i> Language Proficiency:</span>
+              <div class="language-items">
+                <div class="lang-item">
+                  <span class="lang-name">Kurdish</span>
+                  <span class="lang-level native">Native</span>
+                </div>
+                <div class="lang-item">
+                  <span class="lang-name">English</span>
+                  <span class="lang-level good">Professional / Good</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certifications Card -->
+          <div class="certifications-card glass-panel">
+            <h3 class="cert-card-title"><i class="fa-solid fa-certificate"></i> Verified Certificates & Courses</h3>
+
+            <div class="cert-list">
+              <div class="cert-item">
+                <div class="cert-badge"><i class="fa-solid fa-database"></i></div>
+                <div class="cert-info">
+                  <h4 class="cert-name">Database Technology</h4>
+                  <p class="cert-issuer">Sulaimani Polytechnic University</p>
+                  <span class="cert-focus">Relational schema design, SQL optimization, and query transactions</span>
+                </div>
+              </div>
+
+              <div class="cert-item">
+                <div class="cert-badge"><i class="fa-brands fa-flutter"></i></div>
+                <div class="cert-info">
+                  <h4 class="cert-name">Flutter Development</h4>
+                  <p class="cert-issuer">Udemy</p>
+                  <span class="cert-focus">Cross-platform mobile applications, state management, and custom UI</span>
+                </div>
+              </div>
+
+              <div class="cert-item">
+                <div class="cert-badge"><i class="fa-brands fa-laravel"></i></div>
+                <div class="cert-info">
+                  <h4 class="cert-name">Laravel & PHP for Beginners</h4>
+                  <p class="cert-issuer">Udemy</p>
+                  <span class="cert-focus">MVC architecture, Eloquent ORM, authentication, and routing</span>
+                </div>
+              </div>
+
+              <div class="cert-item">
+                <div class="cert-badge"><i class="fa-solid fa-fire"></i></div>
+                <div class="cert-info">
+                  <h4 class="cert-name">Firebase for Web & Mobile</h4>
+                  <p class="cert-issuer">Coursera</p>
+                  <span class="cert-focus">NoSQL Cloud Firestore, Firebase Authentication, and Cloud Functions</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- INTERACTIVE TERMINAL CONSOLE SECTION -->
+    <section class="section terminal-section" id="terminal-section">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-subtitle"><i class="fa-solid fa-code"></i> Developer Console</span>
+          <h2 class="section-title">Interactive Terminal & Live Developer Sandbox</h2>
+          <p class="section-desc">
+            Explore Zanyar's technical profile, projects, and contact info via command-line or click the quick commands below.
+          </p>
+        </div>
+
+        <div class="terminal-grid">
+          
+          <!-- Terminal Box -->
+          <div class="terminal-card glass-panel">
+            <div class="terminal-bar">
+              <div class="terminal-controls">
+                <span class="term-btn close"></span>
+                <span class="term-btn min"></span>
+                <span class="term-btn max"></span>
+              </div>
+              <div class="terminal-title"><i class="fa-solid fa-terminal"></i> zanyar@portfolio:~ (bash)</div>
+              <div class="terminal-badge">ONLINE</div>
+            </div>
+
+            <div class="terminal-quick-actions">
+              <span>Quick Commands:</span>
+              <button class="term-chip" data-cmd="whoami">whoami</button>
+              <button class="term-chip" data-cmd="skills">skills</button>
+              <button class="term-chip" data-cmd="projects">projects</button>
+              <button class="term-chip" data-cmd="education">education</button>
+              <button class="term-chip" data-cmd="cat contact.json">cat contact.json</button>
+              <button class="term-chip" data-cmd="download-cv">download-cv</button>
+              <button class="term-chip" data-cmd="clear">clear</button>
+            </div>
+
+            <div class="terminal-screen" id="terminalScreen">
+              <div class="terminal-history" id="terminalHistory">
+                <div class="term-line output system-msg">
+                  Zanyar Terminal v2.4 (SPU-CS Edition)<br>
+                  Type <span class="highlight">help</span> or click one of the quick command buttons above.
+                </div>
+              </div>
+
+              <div class="terminal-input-row">
+                <span class="term-prompt"><span class="user">zanyar</span><span class="at">@</span><span class="host">spu</span>:<span class="path">~</span>$</span>
+                <input type="text" id="terminalInput" class="term-input" placeholder="type command (e.g. whoami, skills, projects, contact)..." autocomplete="off" spellcheck="false">
+              </div>
+            </div>
+          </div>
+
+          <!-- Live System & Database Metrics Simulator -->
+          <div class="telemetry-card glass-panel">
+            <div class="telemetry-header">
+              <div>
+                <h3 class="telemetry-title"><i class="fa-solid fa-chart-line"></i> App & Database Performance</h3>
+                <p class="telemetry-subtitle">Flutter & MySQL Query Simulator</p>
+              </div>
+              <span class="badge-status-live"><span class="pulse-dot"></span> LIVE 60Hz</span>
+            </div>
+
+            <div class="telemetry-metrics-grid">
+              <div class="telemetry-metric-tile">
+                <div class="metric-top">
+                  <span class="metric-name">MySQL Query Latency</span>
+                  <i class="fa-solid fa-bolt text-cyan"></i>
+                </div>
+                <div class="metric-val" id="metricLatency">4.8 ms</div>
+                <div class="metric-trend positive"><i class="fa-solid fa-arrow-trend-down"></i> Indexed sub-5ms</div>
+              </div>
+
+              <div class="telemetry-metric-tile">
+                <div class="metric-top">
+                  <span class="metric-name">Flutter UI Framerate</span>
+                  <i class="fa-solid fa-mobile-screen text-emerald"></i>
+                </div>
+                <div class="metric-val text-emerald">60.0 FPS</div>
+                <div class="metric-trend positive"><i class="fa-solid fa-check"></i> Smooth rendering</div>
+              </div>
+
+              <div class="telemetry-metric-tile">
+                <div class="metric-top">
+                  <span class="metric-name">Firestore Sync State</span>
+                  <i class="fa-solid fa-fire text-amber"></i>
+                </div>
+                <div class="metric-val text-amber">Online</div>
+                <div class="metric-trend positive"><i class="fa-solid fa-cloud"></i> Real-time listener active</div>
+              </div>
+
+              <div class="telemetry-metric-tile">
+                <div class="metric-top">
+                  <span class="metric-name">Cache Hit Ratio</span>
+                  <i class="fa-solid fa-database text-purple"></i>
+                </div>
+                <div class="metric-val" id="metricCache">99.1%</div>
+                <div class="metric-trend positive"><i class="fa-solid fa-arrow-trend-up"></i> Optimized memory</div>
+              </div>
+            </div>
+
+            <!-- Simulated live sparkline graph canvas -->
+            <div class="telemetry-chart-box">
+              <div class="chart-header">
+                <span>Database Query Throughput (Simulated)</span>
+                <span id="chartTimestamp" class="text-muted font-mono">00:00:00 UTC</span>
+              </div>
+              <canvas id="telemetryCanvas" width="500" height="130"></canvas>
+            </div>
+
+            <div class="telemetry-footer">
+              <button class="btn btn-sm btn-glass w-100" id="simulateSpikeBtn">
+                <i class="fa-solid fa-bolt-lightning"></i> Test Database High Concurrency
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT & COLLABORATION SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        
+        <div class="contact-card glass-panel">
+          <div class="contact-grid">
+            
+            <div class="contact-info-col">
+              <span class="section-subtitle"><i class="fa-solid fa-paper-plane"></i> Get In Touch</span>
+              <h2 class="contact-title">Let's build something <span class="gradient-text">impactful</span> together.</h2>
+              <p class="contact-desc">
+                Have a mobile app to engineer in Flutter, a robust web application to build with Laravel & MySQL, or an engineering role to discuss? Reach out anytime!
+              </p>
+
+              <div class="contact-direct-items">
+                <!-- Phone -->
+                <div class="direct-item">
+                  <div class="direct-icon"><i class="fa-solid fa-phone"></i></div>
+                  <div class="direct-text">
+                    <span class="direct-label">Direct Phone</span>
+                    <a href="tel:+9647517988985" class="direct-link">0751 798 8985 (+964)</a>
+                  </div>
+                  <button class="copy-pill" id="copyPhoneContactBtn" title="Copy Phone Number">
+                    <i class="fa-regular fa-copy"></i>
+                  </button>
+                </div>
+
+                <!-- Email -->
+                <div class="direct-item">
+                  <div class="direct-icon"><i class="fa-solid fa-envelope"></i></div>
+                  <div class="direct-text">
+                    <span class="direct-label">Email Address</span>
+                    <a href="mailto:zanyarzorab9@gmail.com" class="direct-link">zanyarzorab9@gmail.com</a>
+                  </div>
+                  <button class="copy-pill" id="copyEmailContactBtn" title="Copy Email">
+                    <i class="fa-regular fa-copy"></i>
+                  </button>
+                </div>
+
+                <!-- Location -->
+                <div class="direct-item">
+                  <div class="direct-icon"><i class="fa-solid fa-location-dot"></i></div>
+                  <div class="direct-text">
+                    <span class="direct-label">Location</span>
+                    <span class="direct-link">Saidsadiq - slemani, Kurdistan Region, Iraq</span>
+                  </div>
+                </div>
+
+                <!-- Telegram -->
+                <div class="direct-item">
+                  <div class="direct-icon"><i class="fa-brands fa-telegram"></i></div>
+                  <div class="direct-text">
+                    <span class="direct-label">Telegram Direct</span>
+                    <a href="https://t.me/zanaway1" target="_blank" rel="noopener noreferrer" class="direct-link">@zanaway1</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Social links bar -->
+              <div class="contact-social-footer">
+
+                <a href="assets/Zanyar_Z_Ahmed_CV.pdf" download="Zanyar_Z_Ahmed_CV.pdf" class="social-box" title="Download CV">
+                  <i class="fa-solid fa-file-arrow-down"></i>
+                  <span>Download CV</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Interactive Contact Form -->
+            <div class="contact-form-col">
+              <form class="contact-form" id="contactForm" novalidate>
+                <h3 class="form-title">Send Zanyar a Direct Message</h3>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="senderName">Your Name <span class="required">*</span></label>
+                    <div class="input-with-icon">
+                      <i class="fa-regular fa-user"></i>
+                      <input type="text" id="senderName" name="name" placeholder="John Doe" required>
+                    </div>
+                    <span class="form-error" id="nameError">Please enter your name</span>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="senderEmail">Your Email <span class="required">*</span></label>
+                    <div class="input-with-icon">
+                      <i class="fa-regular fa-envelope"></i>
+                      <input type="email" id="senderEmail" name="email" placeholder="john@example.com" required>
+                    </div>
+                    <span class="form-error" id="emailError">Please enter a valid email address</span>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="subjectSelect">Inquiry Subject</label>
+                  <div class="input-with-icon select-wrapper">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <select id="subjectSelect" name="subject">
+                      <option value="Mobile App Project (Flutter)">Mobile App Project (Flutter / Firebase)</option>
+                      <option value="Web / Database Development">Web & Database Project (Laravel / MySQL)</option>
+                      <option value="Software Developer Job Opportunity">Software Developer Job Opportunity</option>
+                      <option value="Other Inquiries">General Collaboration / Coffee Chat</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="senderMessage">Message <span class="required">*</span></label>
+                  <textarea id="senderMessage" name="message" rows="5" placeholder="Hi Zanyar, I'd like to discuss a project..." required></textarea>
+                  <span class="form-error" id="messageError">Message must be at least 10 characters</span>
+                </div>
+
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-primary btn-lg w-100" id="sendMessageBtn">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span>Send Message to Zanyar</span>
+                  </button>
+                </div>
+
+                <div class="form-success-banner" id="formSuccessBanner">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <div>
+                    <strong>Message Dispatched Successfully!</strong>
+                    <p>Thank you for reaching out, Zanyar will get back to you shortly.</p>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#hero" class="nav-brand">
+          <span class="brand-bracket">&lt;</span>
+          <span class="brand-name">ZANYAR Z AHMED</span>
+          <span class="brand-cursor">/</span>
+          <span class="brand-bracket">&gt;</span>
+        </a>
+        <p class="footer-copy">
+          Database Technology & Software Developer · Sulaimani, Kurdistan Region, Iraq
+        </p>
+      </div>
+
+      <div class="footer-center">
+        <div class="system-status-indicator">
+          <span class="pulse-indicator"></span>
+          <span>Sulaimani Local Time <span id="currentLocalTime" class="time-stamp"></span></span>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <a href="assets/Zanyar_Z_Ahmed_CV.pdf" download="Zanyar_Z_Ahmed_CV.pdf" class="btn btn-sm btn-glass" style="margin-right: 0.5rem;">
+          <i class="fa-solid fa-file-arrow-down"></i> CV
+        </a>
+        <button class="back-to-top" id="backToTopBtn" aria-label="Back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- PROJECT DEEP DIVE MODAL -->
+  <div class="modal-backdrop" id="projectModal" aria-hidden="true">
+    <div class="modal-dialog glass-panel" role="dialog" aria-modal="true" aria-labelledby="modalProjectTitle">
+      <button class="modal-close-btn" id="closeProjectModalBtn" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="modal-content" id="modalProjectContent">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
